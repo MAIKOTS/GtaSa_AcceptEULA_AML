@@ -95,5 +95,5 @@ jobs:
       - name: Upload .so artifact
         uses: actions/upload-artifact@v4
         with:
-          name: libFastBoot-${{ matrix.abi }}
+          name: libAcceptEula-${{ matrix.abi }}
           path: build/${{ matrix.abi }}/**/*.so
