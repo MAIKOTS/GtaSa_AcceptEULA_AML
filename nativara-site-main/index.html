@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nativara IDE - C/C++ Nativo no Android</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="ic_launcher.png">
+    <meta name="theme-color" content="#18181B">
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Nativara IDE é uma IDE mobile open-source para Android focada em desenvolvimento nativo. Integra Clang/LLVM, gera arquivos .so e possui editor com abas, console integrado e sistema de recursos remoto.">
+    <meta name="keywords" content="IDE Android, C++, C, Clang, LLVM, compilador mobile, Nativara, AML-IDE, programação Android, mods GTA SA">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:title" content="Nativara IDE - Compile C/C++ no Android">
+    <meta property="og:description" content="Uma IDE completa com Clang/LLVM, suporte multi-ABI e modo imersivo. Compile direto no seu dispositivo sem PC.">
+    <meta property="og:image" content="https://nativara-ide.pages.dev/assets/prints/1.png">
+    <meta property="og:url" content="https://nativara-ide.pages.dev/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="animate">
+        <a href="#" class="logo-container">
+            <img src="ic_launcher.png" alt="Ícone Nativara">
+            <div class="logo-text">Nativara<span>IDE</span></div>
+        </a>
+        <a href="https://github.com/MAIKOTS/AML-IDE-Android" target="_blank" class="github-btn">
+            ⭐ Repositório GitHub
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero animate">
+        <div class="tag">Open Source • MIT License</div>
+        <img src="ic_launcher.png" alt="Nativara IDE Logo" class="hero-img">
+        
+        <h1>Compile <span>C/C++</span> direto no seu Android</h1>
+        <p>Transforme seu dispositivo em uma estação de trabalho. O Nativara IDE traz o poder do compilador Clang/LLVM para a palma da sua mão, sem depender de um PC.</p>
+        
+        <div class="btn-group">
+            <a href="https://github.com/MAIKOTS/AML-IDE-Android/releases/latest" class="btn">
+                ⬇️ Baixar APK
+            </a>
+            <a href="https://github.com/MAIKOTS/AML-IDE-Android" class="btn btn-outline">
+                Ver Código-Fonte
+            </a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features animate">
+        <div class="card">
+            <h3>⚡ Clang/LLVM Nativo</h3>
+            <p>Compilação real com o mesmo backend do Android NDK. Gere arquivos <code>.so</code> com performance máxima e sem depender de servidores externos.</p>
+        </div>
+        <div class="card">
+            <h3>📱 Multi-ABI</h3>
+            <p>Suporte nativo para as arquiteturas ARM64 (arm64-v8a) e ARM32 (armeabi-v7a). Um único clique para gerar binários compatíveis.</p>
+        </div>
+        <div class="card">
+            <h3>📝 Editor Poderoso</h3>
+            <p>Syntax highlighting configurável via JSON, números de linha, fechamento automático e teclado otimizado que não cobre o código.</p>
+        </div>
+        <div class="card">
+            <h3>🛠️ Modo Imersivo</h3>
+            <p>Interface 100% focada no código. Tela cheia, sem barras de navegação, com tela sempre ligada e suporte a Notch (Edge-to-Edge).</p>
+        </div>
+        <div class="card">
+            <h3>🐙 Integração GitHub</h3>
+            <p>Clone repositórios diretamente pelo app, gerencie projetos e explore arquivos em uma árvore de diretórios intuitiva.</p>
+        </div>
+        <div class="card">
+            <h3>🧰 Console em Tempo Real</h3>
+            <p>Acompanhe o output do compilador instantaneamente. O terminal integrado exibe erros, avisos e o tempo de build.</p>
+        </div>
+    </section>
+
+    <!-- Carrossel de Screenshots -->
+    <div class="editor-wrapper animate">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <img src="assets/prints/1.png" alt="Nativara IDE - Editor de Código" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/prints/2.png" alt="Nativara IDE - Console de Compilação" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/prints/3.png" alt="Nativara IDE - Configurações e Menus" loading="lazy">
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moverSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="carousel-dots" id="carouselDots">
+            <span class="dot active" onclick="irParaSlide(0)"></span>
+            <span class="dot" onclick="irParaSlide(1)"></span>
+            <span class="dot" onclick="irParaSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- Como Instalar -->
+    <section class="install-section animate">
+        <h2>🚀 Como instalar a IDE</h2>
+        <ol>
+            <li>Acesse a página de <a href="https://github.com/MAIKOTS/AML-IDE-Android/releases/latest" target="_blank">Releases no GitHub</a>.</li>
+            <li>Baixe o arquivo <b>.apk</b> mais recente disponível.</li>
+            <li>No seu Android, permita a instalação de aplicativos de "Fontes Desconhecidas" para o seu navegador.</li>
+            <li>Abra o APK baixado e conclua a instalação.</li>
+            <li><i>Nota: Na primeira execução, a IDE fará o download automático dos recursos necessários (Clang/LLVM).</i></li>
+        </ol>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido com dedicação por <a href="https://github.com/MAIKOTS" target="_blank">MaikoTS</a></p>
+        <p style="margin-top: 10px;">Nativara IDE &copy; <script>document.write(new Date().getFullYear())</script>. Projeto open-source sob a licença MIT.</p>
+    </footer>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
